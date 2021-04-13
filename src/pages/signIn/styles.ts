@@ -5,3 +5,14 @@ export const Container = styled.View`
     align-items: center;
     justify-content: center;
 `;
+
+export const Title = styled.Text`
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin: 64px 0 24px;
+
+    color: #F4EDE8;
+`;
