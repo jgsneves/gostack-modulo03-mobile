@@ -4,6 +4,8 @@ import { Container, Title } from './styles';
 import {useFonts} from 'expo-font';
 
 import logoImg from '../../assets/logo.png';
+import { Button } from '../../components/Button';
+import { Input } from '../../components/Input';
 
 export const SignIn: React.FC = () => {
 
@@ -18,6 +20,9 @@ export const SignIn: React.FC = () => {
         <Container>
             <Image source={logoImg}/>
             <Title style={{fontFamily: 'RobotoSlab'}}>Faça seu login</Title>
+            <Input icon="mail" name="email" placeholder="E-mail"/>
+            <Input icon="lock" name="password" placeholder="Senha"/>
+            <Button onPress={() => {console.log("teste")}}>Entrar</Button>
         </Container>
     );
 }
